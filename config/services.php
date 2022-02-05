@@ -1,7 +1,5 @@
 <?php
 
-use App\Helper\Constant;
-
 return [
 
     /*
@@ -35,6 +33,6 @@ return [
     'google' => [
         'client_id' => env('GOOGLE_CLIENT_ID'),
         'client_secret' => env('GOOGLE_CLIENT_SECRET'),
-        'redirect' => Constant::google_redirect_url()
+        'redirect' => env('GOOLE_REDIRECT_URL')
     ],    
 ];
